@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome Screen</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+</head>
+<body>
+	<div class="background">
+	<div class="wrapper">
+			<h1> Mikita Lipski </h1>
+			<p> Just a lil' safe space</p>
+
+	</div>
+	<div class="welcome-section content-hidden">
+		<div class="content-wrap">
+			<ul class="fly-in-text">
+				<li>101</li>
+				<li>011</li>
+				<li>101</li>
+				<li>010</li>
+				<li>111</li>
+			</ul>
+			<a href="#" class="enter-button">GO</a>
+		</div>
+	</div>
+	</div>	
+	<script type="text/javascript">
+	$(function()
+	{
+			var welcomeSection = $('.welcome-section'),
+				enterButton = $('.enter-button');
+
+			setTimeout(function(){
+					welcomeSection.removeClass('content-hidden');
+					}, 200);
+
+		enterButton.on('click', function(e) {
+			e.preventDefault();
+			welcomeSection.addClass('content-hidden').fadeOut();
+		});
+	});
+	</script>>
+</body>
+</html>
