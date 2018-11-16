@@ -12,12 +12,19 @@ body {
 	display: table;
 
 }
-.background {
 
-}
 h1 {
 	color: #fff;
 	text-align: left;
+}
+#home-intro {
+	.background-color: green;
+}
+
+.index-page {
+	padding-left: 48px;
+	padding-right: 48px;
+	padding:;
 }
 
 .wrapper {
